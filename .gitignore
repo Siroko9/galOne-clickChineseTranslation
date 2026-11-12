@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+# The test game, its backup, and extracted script packs stay local.
+test/
+test-backup/
+
+Thumbs.db
+desktop.ini
+*.gguf
