@@ -5,6 +5,9 @@ __pycache__/
 test/
 test-backup/
 
+# Downloaded engine and model. Too large for git, and kept off the C drive.
+runtime/
+
 Thumbs.db
 desktop.ini
 *.gguf

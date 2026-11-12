@@ -29,8 +29,9 @@ class SetupError(Exception):
 
 
 def runtime_home():
-    base = os.environ.get("LOCALAPPDATA") or str(Path.home())
-    return Path(base) / "GalPretrans"
+    # Store Python maps LOCALAPPDATA onto C:. Keep the model and engine on the
+    # project drive instead, beside this repository.
+    return Path(__file__).resolve().parents[2] / "runtime"
 
 
 def detect_kind():
